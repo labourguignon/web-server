@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patua+One&family=Roboto+Slab:wght@200;400&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&family=Tilt+Warp&display=swap');
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+@media (max-width:775px){
+    body {
+        font-size: 100%;
+        background: #F2E3D5;   
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .header {
+     display: flex;
+     position: fixed;
+     flex-direction: row;
+     align-items: center;
+     align-content: center;
+     justify-content: space-around;
+     height: 100px;
+     width: 100%;
+     background-color:#F2E3D5 ;
+    }
+    .botao{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       align-content: center;
+       justify-content: center;
+       background:none;
+       border: none;
+       font-family: 'Roboto Slab', serif; 
+       color:#026773 ;
+       font-weight: 16%;
+       font-size: 4vw;
+       height: 90%;
+       width: fit-content;
+    
+    }
+    section{
+        min-height: 100vh;
+        padding-top: 100px;
+        background-color: #3CA6A6;
+    
+    }
+    .principal{
+        width: 100%;
+    }
+    
+    
+    #introducao{
+        display: flex;
+        flex-direction: column;
+        background: #3CA6A6;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+    
+    }
+    .texto_princip{
+        padding-left: 20px;
+        background:none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 20px;
+        height: 50%;
+        width: 100%;
+    }
+    
+    .titulo1{
+        font-size: 50px;
+        font-family: 'Patua One', cursive;
+        color: #012E40;
+    }
+    .titulo2{
+        font-family: 'Roboto Slab', serif;
+        color: #012E40;
+    }
+    
+    .image_princip{
+        border-radius: 15px;
+        width: 70%;
+        height: 40%;
+    }
+    #curiosidades{
+        width: 100%;
+        background-color:none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .curiosidade1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-color: #012E40;
+        height: 180px;
+        width: 90%;
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    
+    }
+    .curiosidade2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-color: #026773;
+        height: 180px;
+        width: 90%;
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    }
+    .curiosidade3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-color: #012E40;
+        height: 180px;
+        width: 90%;
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    
+    }
+    .imagem1{
+        width:19vw;
+        height:18vw;
+    }
+    .imagem2{
+        width:18vw;
+        height:17vw;
+    }
+    .imagem3{
+        width:18vw;
+        height:17vw;
+    }
+    .blocotext3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .blocotext2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .blocotext1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .titulo_curiosidade1{
+        font-family: 'Roboto Slab', serif;
+        color: #3CA6A6;
+        font-size: 3vw;
+    }
+    
+    
+    .titulo_curiosidade2{
+        font-family: 'Roboto Slab', serif;
+        color: #3CA6A6;
+        font-size: 3vw;
+    }
+    
+    
+    .titulo_curiosidade3{
+        font-family: 'Roboto Slab', serif;
+        color: #3CA6A6;
+        font-size: 3vw;
+    }
+    .texto_curiosidade1{
+        color: #026773;
+        font-size: 3vw;
+    }
+    
+    .texto_curiosidade2{
+        color: #012E40;
+        font-size: 3vw;
+    }
+    
+    .texto_curiosidade3{
+        color: #026773;
+        font-size: 3vw;
+    }
+    #Redes_sociais{
+        display: flex;
+        background-color:none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo_contatos{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 6vh;
+        height: 100vh;
+        width:100%;
+    }
+    .linha1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        
+    }
+    .linha2{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        
+    }
+    .instagram{
+        width: 40vw;
+        height: 40vw;
+        background-color: none ;
+        border: none;
+    }
+    
+    .whatsapp{
+        width: 40vw;
+        height: 100%;
+        background-color:none ;
+        border: none;
+    }
+    .spotify{
+        width: 40vw;
+        height: 100%;
+        background-color:none;
+        border: none;
+        
+    }
+    .email{
+        width: 50vw;
+        height: 100%;
+        background-color:none;
+        border: none;
+    }
+    .instagram_image{
+        width: 100%;
+        height: 100%;
+    }
+    .whatsapp_image{
+        width: 100%;
+        height: 100%;
+    }
+    .spotify_image{
+        width: 100%;
+        height: 100%;
+    }
+    .email_image{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width:775px){
+    body {
+        font-size: 100%;
+        background: #F2E3D5;   
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .header {
+     display: flex;
+     position: fixed;
+     flex-direction: row;
+     align-items: center;
+     align-content: center;
+     justify-content: space-around;
+     height: 100px;
+     width: 100%;
+     background-color: #F2E3D5;
+    }
+    .botao{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       align-content: center;
+       justify-content: center;
+       width: fit-content;
+       height: 90%;
+       border: none;
+       font-family: 'Roboto Slab', serif; 
+       color:#026773 ;
+       font-weight: 800px;
+       font-size: 3vw;
+    }
+    section{
+        min-height: 100vh;
+        padding-top: 100px;
+        background-color: #3CA6A6;
+    }
+    #introducao{
+        display: flex;
+        flex-direction: row;
+        background: #3CA6A6;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        gap: 20px;
+    
+    }
+    .texto_princip{
+        padding-left: 20px;
+        background:none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 40px;
+        width: fit-content;
+        height: 100%;
+        width: 50%;
+        
+    }
+    
+    .titulo1{
+        font-size: 65px;
+        font-family: 'Patua One', cursive;
+        color: #012E40;
+    }
+    .titulo2{
+        font-family: 'Roboto Slab', serif;
+        color: #012E40;
+    }
+    
+    .image_princip{
+        border-radius: 10px;
+        padding-right: 20px;
+        width: 40%;
+        height: 70%;
+    }
+    #curiosidades{
+        width:100%;
+        height: 100vh;
+        background-color:none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .curiosidade1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-color: #012E40;
+        height: 250px;
+        width: 70%;
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    
+    }
+    .curiosidade2{
+        align-self: flex-end;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-color: #026773;
+        height:250px;
+        width: 70%;
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    }
+    .curiosidade3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-around;
+        background-color: #012E40;
+        height: 250px;
+        width: 70%;
+        border-radius: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
+    
+    }
+    .imagem1{
+        width:17vw;
+        height:200px;
+    }
+    .imagem2{
+        width:17vw;
+        height:200px;
+    }
+    .imagem3{
+        width:17vw;
+        height:200px;
+    }
+    .blocotext3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .blocotext2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .blocotext1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .titulo_curiosidade1{
+        font-family: 'Roboto Slab', serif;
+        color: #3CA6A6;
+        font-size: 2.6vw;
+    }
+    
+    
+    .titulo_curiosidade2{
+        font-family: 'Roboto Slab', serif;
+        color: #3CA6A6;
+        font-size: 2.6vw;
+    }
+    
+    
+    .titulo_curiosidade3{
+        font-family: 'Roboto Slab', serif;
+        color: #3CA6A6;
+        font-size: 2.6vw;
+    }
+    .texto_curiosidade1{
+        color: #026773;
+        font-size: 1.5vw;
+    }
+    
+    .texto_curiosidade2{
+        color: #012E40;
+        font-size: 1.5vw;
+    }
+    
+    .texto_curiosidade3{
+        color: #026773;
+        font-size: 1.5vw;
+    }
+    #Redes_sociais{
+        display: flex;
+        background-color:none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 100vh;
+        width: 100%;
+    }
+    .logo_contatos{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        justify-content: center;
+        gap: 8vh;
+        height: 100vh;
+        width: 100%;
+    }
+    .linha1{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .linha2{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        padding-left: 4%;
+        gap: 2%;
+    }
+    .instagram{
+        width: 28%;
+        height: 100%;
+        background-color:none;
+        border: none;
+    }
+    
+    .whatsapp{
+        width: 28%;
+        height: 90%;
+        background-color:none ;
+        border: none;
+    }
+    .spotify{
+        width: 28%;
+        height: 100%;
+        background-color:none ;
+        border: none;
+        
+    }
+    .email{
+        width: 33%;
+        height: 100%;
+        background-color:none ;
+        border: none;
+    }
+    .instagram_image{
+        width: 100%;
+        height: 100%;
+    }
+    .whatsapp_image{
+        width: 100%;
+        height: 100%;
+    }
+    .spotify_image{
+        width: 100%;
+        height: 100%;
+    }
+    .email_image{
+        width: 100%;
+        height: 100%;
+    }
+}
